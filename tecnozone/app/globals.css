@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Labrada:ital,wght@1,500&display=swap');
+
 /*Navbar*/
 
 .nav-link:hover {
@@ -15,4 +17,12 @@
         font-size: 110%;
         text-decoration: underline;
     }
+}
+
+.navbar-brand {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid rgba(18, 58, 66, .4);
+    border-radius: 25%;
 }
