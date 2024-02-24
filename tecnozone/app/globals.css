@@ -1,0 +1,18 @@
+/*Navbar*/
+
+.nav-link:hover {
+    animation-duration: 0.5s;
+    animation-name: bigger;
+    font-size: 110%;
+    text-decoration: underline;
+}
+
+@keyframes bigger {
+    from {
+        font-size:100%;
+    }
+    to{
+        font-size: 110%;
+        text-decoration: underline;
+    }
+}
