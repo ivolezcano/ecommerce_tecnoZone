@@ -1,3 +1,5 @@
+import Link from "next/link"
+import Image from "next/image"
 
 async function getData (id) {
   const response = await fetch(`https://fake-store-api-409620.rj.r.appspot.com/api/products/${id}`)
@@ -11,8 +13,17 @@ async function shopPage({ params }) {
 
   return (
     <div>
-        <h1>Product Page</h1>
-        <p>{indProduct.name}</p>
+      <div>
+        <Link href={'/shop'} className="back-link">🡠 Back to Shop</Link>
+      </div>
+      <div>
+        <h1>{indProduct.name}</h1>
+        <Image 
+        className='product-img' 
+        src={indProduct.imageUrl} 
+        width={700} 
+        height={600}/>
+      </div>
     </div>
   )
 }

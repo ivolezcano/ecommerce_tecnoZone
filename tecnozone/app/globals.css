@@ -26,3 +26,13 @@
     border: 2px solid rgba(18, 58, 66, .4);
     border-radius: 25%;
 }
+
+/*Page product {id}*/
+
+.back-link{
+    text-decoration: none;
+}
+
+.product-img{
+    border-radius: 5%;
+}
