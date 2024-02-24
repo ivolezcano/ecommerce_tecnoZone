@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css" />
       </head>
       <body>
-        <Navbar />
         <div className="container">
+        <Navbar />
           {children}
         </div>
       </body>
