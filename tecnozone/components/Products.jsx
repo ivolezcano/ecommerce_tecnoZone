@@ -2,6 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import '@/app/globals.css'
 
 function Products({ products }) {
 
@@ -16,16 +17,15 @@ function Products({ products }) {
           onClick={() => {
             router.push(`/product/${product.id}`)
           }}
+
         >
-          <div className='container'>
-            <div className='row align-items-start'>
+          <div className='container border-prod'>
+            <div className='row'>
               <div className='col'>
                 <Image src={product.image} width={100} height={100}></Image>
               </div>
               <div className='col'>
-                <h5>{product.title} </h5>
-              </div>
-              <div className='col'>
+                <h6>{product.title} </h6>
                 <h4>${product.price}</h4>
               </div>
             </div>

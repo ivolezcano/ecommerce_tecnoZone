@@ -1,6 +1,7 @@
 import Products from "@/components/Products";
 import React from 'react'
 
+
 async function fetchProduct() {
     const response = await fetch(`https://fakestoreapi.com/products`)
     const data  = await response.json()
