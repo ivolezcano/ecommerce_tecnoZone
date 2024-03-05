@@ -2,9 +2,9 @@ import Products from "@/components/Products";
 import React from 'react'
 
 async function fetchProduct() {
-    const response = await fetch(`https://fake-store-api-409620.rj.r.appspot.com/api/products/all`)
+    const response = await fetch(`https://fakestoreapi.com/products`)
     const data  = await response.json()
-    return data.content
+    return data
 }
 
 async function productPage() {
