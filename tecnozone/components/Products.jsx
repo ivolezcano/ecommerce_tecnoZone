@@ -22,7 +22,7 @@ function Products({ products }) {
           <div className='container border-prod'>
             <div className='row'>
               <div className='col'>
-                <Image src={product.image} width={100} height={100}></Image>
+                <Image src={product.image} width={120} height={120}></Image>
               </div>
               <div className='col'>
                 <h6>{product.title} </h6>

@@ -3,7 +3,7 @@ import React from 'react'
 import '@/app/globals.css'
 
 import Link from 'next/link'
-import Image from 'next/image'
+
 
 function Navbar() {
   return (
@@ -38,4 +38,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar 
